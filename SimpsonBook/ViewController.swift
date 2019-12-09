@@ -12,22 +12,44 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
     
     @IBOutlet weak var tableView: UITableView!
     
+    var simpsonArray = [Simpson]()
+    var chosenSimpson : Simpson?
 
     override func viewDidLoad() {
         super.viewDidLoad()
         tableView.dataSource = self
         tableView.delegate = self
         
+        let homer = Simpson(name: "Homer Simpson", job: "Nuclear Safety", image: UIImage(named: "homersimpson")!)
+        let marge = Simpson(name: "Marge Simpson", job: "Housewife", image: UIImage(named: "margesimpson")!)
+        let bart = Simpson(name: "Bart Simpson", job: "Student", image: UIImage(named: "bartsimpson")!)
+        let lisa = Simpson(name: "Lisa Simpson", job: "Student", image: UIImage(named: "lisasimpson")!)
+        let maggie = Simpson(name: "Maggie Simpson", job: "Baby", image: UIImage(named: "maggiesimpson")!)
+        
+        simpsonArray = [homer, marge, bart, lisa, maggie]
+
     }
 
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 10
+        return simpsonArray.count
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = UITableViewCell()
-        cell.textLabel?.text = "Homer Simpson"
+        cell.textLabel?.text = simpsonArray[indexPath.row].name
         return cell
+    }
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        chosenSimpson = simpsonArray[indexPath.row]
+        self.performSegue(withIdentifier: "toDetailsVC", sender: nil)
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "toDetailsVC" {
+            let detailsViewController = segue.destination as! DetailsViewController
+            detailsViewController.selectedSimpson = chosenSimpson
+        }
     }
 
 }
