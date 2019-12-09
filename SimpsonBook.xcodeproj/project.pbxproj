@@ -14,6 +14,7 @@
 		8349C4B9239DD30E004E317F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8349C4B8239DD30E004E317F /* Assets.xcassets */; };
 		8349C4BC239DD30E004E317F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8349C4BA239DD30E004E317F /* LaunchScreen.storyboard */; };
 		8349C4C4239DD4E2004E317F /* DetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8349C4C3239DD4E2004E317F /* DetailsViewController.swift */; };
+		8349C4C6239DD9B5004E317F /* Simpson.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8349C4C5239DD9B5004E317F /* Simpson.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,7 @@
 		8349C4BB239DD30E004E317F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		8349C4BD239DD30E004E317F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8349C4C3239DD4E2004E317F /* DetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailsViewController.swift; sourceTree = "<group>"; };
+		8349C4C5239DD9B5004E317F /* Simpson.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Simpson.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,6 +64,7 @@
 				8349C4B1239DD30C004E317F /* SceneDelegate.swift */,
 				8349C4B3239DD30C004E317F /* ViewController.swift */,
 				8349C4C3239DD4E2004E317F /* DetailsViewController.swift */,
+				8349C4C5239DD9B5004E317F /* Simpson.swift */,
 				8349C4B5239DD30C004E317F /* Main.storyboard */,
 				8349C4B8239DD30E004E317F /* Assets.xcassets */,
 				8349C4BA239DD30E004E317F /* LaunchScreen.storyboard */,
@@ -145,6 +148,7 @@
 				8349C4B0239DD30C004E317F /* AppDelegate.swift in Sources */,
 				8349C4B2239DD30C004E317F /* SceneDelegate.swift in Sources */,
 				8349C4C4239DD4E2004E317F /* DetailsViewController.swift in Sources */,
+				8349C4C6239DD9B5004E317F /* Simpson.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
